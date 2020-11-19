@@ -89,13 +89,7 @@ function nav() {
       });
     }
 
-    gridClient.on('change', function() {
-      viewer.scaleToDimensions(gridClient.currentImage.width, gridClient.currentImage.height);
-      viewer.shift(gridClient.currentImage.pose.position.x, gridClient.currentImage.pose.position.y);
-    });
-
     registerMouseHandlers();
-    plannedPath.initScale();
 }
 
 
