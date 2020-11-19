@@ -3,7 +3,7 @@ var ros;
 function rosconnection() {
     // Connecting to ROS
      ros = new ROSLIB.Ros({
-        url : 'ws://localhost:9090'
+        url : 'ws://' + location.hostname + ':9090'
     });
          
     ros.on('connection', function() {
